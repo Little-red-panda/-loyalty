@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лояльность</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="block_loyalty">
+        <h1 class="visually-hidden">Лояльность</h1>
+
+        <div class="charts">
+        <!-- Пустое место сверху = 10%. => 1% диаграммы = 0.9 -->
+            <svg width="100%" height="100%" viewBox="0 0 34 34" class="donut">
+                <circle class="donut-hole" cx="50%" cy="50%" r="15.9" fill="transparent"></circle>
+                <circle class="donut-ring" cx="50%" cy="50%" r="15.9" fill="transparent" stroke="#ececec" stroke-width="1" stroke-dasharray="90 10" stroke-dashoffset="20" stroke-linecap="round"></circle>
+                <circle class="donut-promoters" cx="50%" cy="50%" r="15.9" fill="transparent" stroke-width="1.2" stroke-linecap="round"></circle>
+                <circle class="donut-skeptics" cx="50%" cy="50%" r="15.9" fill="transparent" stroke-width="1.2" stroke-linecap="round"></circle>    
+            </svg>
+            <span class="charts__line"></span>
+
+            <div class="info">
+                <p class="info__percent">72<span class="info__percent--sub">.7</span><span class="info__percent--sup">%</span></p>
+                <h2 class="info__title">Лояльность</h2>
+                <p class="info__subtitle">ниже среднего</p>
+                <p class="info__text">по отрасли: FMCG<br> значений слева от медианы<br> 52.0% - 83.1%</p>
+                <p class="info__change">3.1</p>
+                <div class="arrow"><span class="info__arrow"></span></div>
+            </div>
+        </div>
+        
+
+        <div class="legend">
+            <ul class="legend__list">
+                <li class="legend__item legend__item--promoters">
+                    <p class="legend__caption">Промоутеры</p>
+                    <p class="legend__percent">32.0%<span class="legend__people">81</span></p>
+                    <p class="legend__change">+1.2%<span class="legend__change--before"></span><span class="legend__change--after"></span></p>
+                    <span class="legend__item--promoters__line"></span>
+                </li>
+                <li class="legend__item legend__item--skeptics">
+                    <p class="legend__caption">Скептики</p>
+                    <p class="legend__percent">39.1%<span class="legend__people">8</span></p>
+                    <p class="legend__change">+4.8%<span class="legend__change--before"></span><span class="legend__change--after"></span></p>
+                    <span class="legend__item--skeptics__line"></span>
+                </li>
+                <li  class="legend__item legend__item--critics">
+                    <p class="legend__caption">Критики</p>
+                    <p class="legend__percent">79.8%<span class="legend__people">7</span></p>
+                    <p class="legend__change">-9.7%<span class="legend__change--before"></span><span class="legend__change--after"></span></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
